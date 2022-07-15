@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>App</title>
+</head>
+<body>
+   <div id="app" class="wrapper">
+      <header class="header">
+         <div class="header__cart cart" id="cart" data-popup-open="cart">
+            <img class="cart__icon" src="images/cart.svg" alt="cart icon">
+            <div class="cart__value">
+               <span data-cart-count>0</span>
+            </div>
+         </div>
+      </header>
+      <section class="products">
+         <div class="products__cart products-cart" data-cart-container>
+            <img class="products-cart__image" data-cart-image src="images/main.jpeg" alt="cart image">
+            <div class="products-cart__inner">
+               <h4 class="products-cart__title" data-cart-name>Гамбургер</h4>
+               <div class="products-cart__price">
+                  <span data-cart-price>120</span> грн
+               </div>
+               <a class="products-cart__link" data-cart-add="0" href="#">Придбати</a>
+            </div>
+         </div>
+         <div class="products__cart products-cart" data-cart-container>
+            <img class="products-cart__image" data-cart-image src="images/main.jpeg" alt="cart image">
+            <div class="products-cart__inner">
+               <h4 class="products-cart__title" data-cart-name>Чізбургер</h4>
+               <div class="products-cart__price">
+                  <span data-cart-price>150</span> грн
+               </div>
+               <a class="products-cart__link" data-cart-add="1" href="#">Придбати</a>
+            </div>
+         </div>
+         <div class="products__cart products-cart" data-cart-container>
+            <img class="products-cart__image" data-cart-image src="images/main.jpeg" alt="cart image">
+            <div class="products-cart__inner">
+               <h4 class="products-cart__title" data-cart-name>Чізбургер</h4>
+               <div class="products-cart__price">
+                  <span data-cart-price>150</span> грн
+               </div>
+               <a class="products-cart__link" data-cart-add="2" href="#">Придбати</a>
+            </div>
+         </div>
+      </section>
+      <div class="popup" data-popup-name="cart">
+         <div class="popup__content">
+            <div class="popup__items popup-items">
+               <ul class="popup-items__list" data-cart-product-render></ul>
+            </div>
+            <button class="popup__close" data-popup-close="cart">Close</button>
+         </div>
+      </div>
+   </div>
+   <script src="js/popup.js"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>
